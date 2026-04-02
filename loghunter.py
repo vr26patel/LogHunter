@@ -271,21 +271,6 @@ def generate_demo_alerts():
         alerts.append(alert)
         stats["total"] += 1
         if data["severity"] in stats:
-def generate_demo_alerts():
-    """
-    Creates realistic demo alerts when real log files are empty.
-    This lets you see how LogHunter works without needing real attacks.
-    """
-    demo_data = [
-        {
-            "type": "SSH Brute Force",
-            "severity": "critical",
-            "ip": "185.220.101.47",
-            "description": "Multiple failed SSH login attempts detecte>
-            "raw_log": "Failed password for root from 185.220.101.47 p>
-            "log_file": "/var/log/auth.log"
-        },
-        { 
             stats[data["severity"]] += 1
 
 
